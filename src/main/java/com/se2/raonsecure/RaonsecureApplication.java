@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class RaonsecureApplication {
-    // brnch Test
+    // brnch Test 1
     public static void main(String[] args) {
         SpringApplication.run(RaonsecureApplication.class, args);
     }
