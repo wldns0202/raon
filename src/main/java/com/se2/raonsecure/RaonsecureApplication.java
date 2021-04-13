@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class RaonsecureApplication {
-    //하나둘셋
-    //다섯여섯
+    //하나
+    //다섯
     public static void main(String[] args) {
         SpringApplication.run(RaonsecureApplication.class, args);
     }
