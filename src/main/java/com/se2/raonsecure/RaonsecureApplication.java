@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class RaonsecureApplication {
-    //testest
+    //하나둘셋
     public static void main(String[] args) {
         SpringApplication.run(RaonsecureApplication.class, args);
     }
