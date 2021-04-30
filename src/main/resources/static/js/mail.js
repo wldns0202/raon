@@ -4,6 +4,9 @@ const main = {
         $('#btn-send').on('click', function () {
             _this.send()
         })
+        $('#btn-select').on('click', function () {
+            _this.openSelect()
+        })
     },
     send: function () {
         const data = {
@@ -22,6 +25,12 @@ const main = {
         }).fail(function (error) {
             alert(JSON.stringify(error))
         });
+    },
+    openSelect: function () {
+        window.name = 'mailView'
+        window.open('http://localhost:8080/select','selectView','width=1000, height=1000')
+        // const selectWindow = window.open('', '_blank')
+        // selectWindow.location = 'http://localhost:8080/select'
     }
 };
 main.init();

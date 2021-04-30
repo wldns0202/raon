@@ -3,18 +3,17 @@
 <head>
     <title>메일 발송</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
-
 </head>
 <body>
 <h1>메일 발송</h1>
 
-<form>
-    <input type="text" id="address" placeholder="이메일 주소"> <br>
-    <input type="text" id="title" placeholder="제목"> <br>
-    <textarea id="message" placeholder="메일 내용을 입력해주세요." cols="60" rows="20"></textarea>
-    <button type="button" id="btn-send">발송</button>
-</form>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<input type="text" id="address" placeholder="이메일 주소"> <br>
+<input type="text" id="title" placeholder="제목"> <br>
+<input type="button" id="btn-select" value="제품 선택">선택된 제품 : <div id="product"></div><br>
+<textarea id="message" placeholder="메일 내용을 입력해주세요." cols="120" rows="30"></textarea><br>
+<input type="button" id="btn-send" value="발송">
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="/js/mail.js"></script>
 </body>
 </html>

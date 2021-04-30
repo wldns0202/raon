@@ -6,7 +6,6 @@ import com.se2.raonsecure.dto.MailDto;
 import com.se2.raonsecure.dto.MailResponseDto;
 import com.se2.raonsecure.service.MailService;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;

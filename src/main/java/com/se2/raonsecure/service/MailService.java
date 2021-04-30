@@ -11,19 +11,18 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class MailService {
     private JavaMailSender mailSender;
-    private static final String FROM_ADDRESS = "wldns0202@gmail.com";
-
     public String mailSend(MailDto mailDto){
         SimpleMailMessage message = new SimpleMailMessage();
         try {
-            message.setTo(mailDto.getAddress()); //받는사람
-            message.setFrom(MailService.FROM_ADDRESS); //보내는사람
+            String[] setTo = mailDto.getAddress().split(",");
+            message.setTo(setTo); //받는사람
             message.setSubject(mailDto.getTitle()); //제목
             message.setText(mailDto.getMessage()); //내용
 
             mailSender.send(message);
         } catch(MailException e){
             e.printStackTrace();
+            return "전송 실패";
         }
         return "전송 성공";
     }
