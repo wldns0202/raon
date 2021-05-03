@@ -29,8 +29,7 @@ const main = {
     openSelect: function () {
         window.name = 'mailView'
         window.open('http://localhost:8080/select','selectView','width=1000, height=1000')
-        // const selectWindow = window.open('', '_blank')
-        // selectWindow.location = 'http://localhost:8080/select'
+
     }
 };
 main.init();
