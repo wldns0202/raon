@@ -66,7 +66,7 @@ const main = {
             data = 'nxCR1,nxCR2'
         }
         else if(productName === 'Key# Wireless'){
-            data = 'Wireless1,Wireless2,Wireless3,Wireless4,Wireless5,Wireless6,Wireless7,Wireless8,Wireless9,Wireless10,Wireless11,Wireless12'
+            data = 'Wireless1,Wireless2,Wireless3,Wireless4,Wireless5,Wireless6,Wireless7,Wireless8,Wireless9,Wireless10,Wireless11,Wireless12,Wireless1,Wireless2,Wireless3,Wireless4,Wireless5,Wireless6,Wireless7,Wireless8,Wireless9,Wireless10,Wireless11,Wireless12'
         }
         else if(productName === 'TouchEn TransKey'){
             data = 'TK1,Tk2,Tk3'
