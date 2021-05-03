@@ -5,7 +5,7 @@ const main = {
         $('#btn-check').on('click', function () {
             _this.check()
         })
-        $("input:radio[name=product]").on('click', function () {
+        $('input:radio[name=product]').on('click', function () {
             _this.radioClick()
         })
         // document.addEventListener("DOMContentLoaded", function(){
@@ -45,6 +45,9 @@ const main = {
 
         // 고객사 리스트 초기화
         $('#checkList').empty()
+        const checkAll = '<input type="checkbox" name="check" class="checkAll" value="전체 선택" onclick="selectAll(this)">전체 선택<br>'
+        $('#checkList').append(checkAll)
+
         // 고객사 DOM 추가
         let checkBox = null
         let name = null
@@ -87,4 +90,3 @@ const main = {
     }
 };
 main.init()
-
