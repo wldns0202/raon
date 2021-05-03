@@ -43,44 +43,44 @@ const main = {
         const recvData = this.getData(productName)
         const nameArr = recvData.split(',')
 
-        //
-        $('.checkList').empty()
+        // 고객사 리스트 초기화
+        $('#checkList').empty()
         // 고객사 DOM 추가
         let checkBox = null
         let name = null
         for(let i=0; i<nameArr.length; i++){
             name = nameArr[i]
             checkBox = '<input type="checkbox" name="check" value="'+name+'">'
-            $('.checkList').append(checkBox)
-            $('.checkList').append(name)
-            $('.checkList').append('<br/>')
+            $('#checkList').append(checkBox)
+            $('#checkList').append(name)
+            $('#checkList').append('<br/>')
         }
     },
     getData: function (productName) {
         let data = null
         // DB에서 데이터 받아와야함
-        if(productName == 'Key# Biz'){
+        if(productName === 'Key# Biz'){
             data = '비즈1,비즈2,비즈3'
         }
-        else if(productName == 'Key# nxCR'){
+        else if(productName === 'Key# nxCR'){
             data = 'nxCR1,nxCR2'
         }
-        else if(productName == 'Key# Wireless'){
-            data = 'Wireless1,Wireless2,Wireless3,Wireless4,Wireless5,Wireless6'
+        else if(productName === 'Key# Wireless'){
+            data = 'Wireless1,Wireless2,Wireless3,Wireless4,Wireless5,Wireless6,Wireless7,Wireless8,Wireless9,Wireless10,Wireless11,Wireless12'
         }
-        else if(productName == 'TouchEn TransKey'){
+        else if(productName === 'TouchEn TransKey'){
             data = 'TK1,Tk2,Tk3'
         }
-        else if(productName == 'TouchEn mTransKey Web'){
+        else if(productName === 'TouchEn mTransKey Web'){
             data = 'mtweb1,mtweb2,mtweb3,mtweb4'
         }
-        else if(productName == 'TouchEn mTransKey CS'){
+        else if(productName === 'TouchEn mTransKey CS'){
             data = 'mtcs1,mtcs2'
         }
-        else if(productName == 'TouchEn mVaccine Web'){
+        else if(productName === 'TouchEn mVaccine Web'){
             data = 'mvweb1,mvweb2,mvweb3,mvweb4,mvweb5,mvweb6'
         }
-        else if(productName == 'TouchEn mVaccine CS'){
+        else if(productName === 'TouchEn mVaccine CS'){
             data = 'mvcs1,mvcs2,mvcs3'
         }
         return data
