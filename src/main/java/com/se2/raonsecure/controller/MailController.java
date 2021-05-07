@@ -1,6 +1,6 @@
 package com.se2.raonsecure.controller;
 
-import com.se2.raonsecure.ApiResponse.MailAdapter;
+import com.se2.raonsecure.ApiResponse.ApiAdapter;
 import com.se2.raonsecure.ApiResponse.MailResponse;
 import com.se2.raonsecure.dto.MailDto;
 import com.se2.raonsecure.dto.MailResponseDto;
@@ -16,12 +16,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class MailController {
     private final MailService mailService;
 
-
     @PostMapping("/api/send")
     public @ResponseBody
     MailResponse execMail(@RequestBody MailDto mailDto){
-        mailService.mailSend(mailDto);
-        MailResponseDto mailResponseDto = new MailResponseDto("전송 완료");
-        return MailAdapter.mailResponse(mailResponseDto);
+        MailResponseDto mailResponseDto = null;
+        try{
+            mailService.mailSend(mailDto);
+            mailResponseDto = new MailResponseDto("전송 완료");
+        } catch(Exception e){
+            mailResponseDto = new MailResponseDto("전송 실패. "+ e);
+        }
+        return ApiAdapter.mailResponse(mailResponseDto);
     }
 }
