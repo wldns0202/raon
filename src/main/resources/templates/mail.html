@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>메일 발송</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+<body>
+<h1>메일 발송</h1>
+
+<input type="text" id="address" placeholder="이메일 주소"> <br>
+<input type="text" id="title" placeholder="제목"> <br>
+<input type="button" id="btn-select" value="제품 선택"><br>
+선택된 제품 : <div id="product"></div><br>
+선택된 고객사 : <div id="check"></div><br>
+<textarea id="message" placeholder="메일 내용을 입력해주세요." cols="120" rows="30"></textarea><br>
+<input type="button" id="btn-send" value="발송">
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/js/mail.js"></script>
+</body>
+</html>
