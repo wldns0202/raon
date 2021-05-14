@@ -3,9 +3,11 @@
 <head>
     <title>전송 이력 조회</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
 </head>
 <body>
-<h1>메일 전송 이력 조회</h1>
+<h1 align="center">메일 전송 이력 조회</h1>
+<br>
 <select name="solution">
     <option value="default">솔루션</option>
     <option value="wireless">key#Wireless</option>
@@ -28,8 +30,29 @@
 </select>
 
 <button>조회</button>
-
 <br><br>
+<table class="table">
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>작성자</th>
+        <th>제목</th>
+        <th>솔루션</th>
+        <th>날짜</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>샘플작성자</td>
+        <td>샘플제목</td>
+        <td>샘플솔루션</td>
+        <td>210514</td>
+    </tr>
+    </tbody>
+</table>
 
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
