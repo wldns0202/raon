@@ -12,17 +12,14 @@ public class ViewController {
     public String toHome(){
         return "home";
     }
-
     @GetMapping("/mail")
     public String toMail(){
         return "mail";
     }
-
     @GetMapping("/select")
     public String toSelect(){
         return "select";
     }
-
     @GetMapping("/lookup")
     public String toLookup(){
         return "lookup";
