@@ -1,3 +1,5 @@
+application.properties
+
 #mail
 
 spring.mail.host=smtp.gmail.com
